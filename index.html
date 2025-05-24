@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Break the Egg</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔥 Intro Animation -->
+  <div id="intro">
+    <img src="assets/egg.png" alt="intro egg" class="intro-egg" />
+    <p>Wait for the hard boiled egg🥚...</p>
+  </div>
+
+  <!-- 👇 Main Content Wrapped -->
+  <div id="main" style="display: none;">
+    <h1>BREAK THE EGG 🥚</h1>
+    <div class="egg-container">
+      <img id="egg" src="assets/egg.png" alt="egg" />
+      <canvas id="confetti"></canvas>
+    </div>
+    <p id="message"></p>
+    <p id="counter">Eggs Smashed: 0</p>
+    <button id="reset">Break Again🤭</button>
+    <audio id="crack-sound" src="assets/crack.mp3"></audio>
+
+    <footer style="margin-top: 2rem; font-size: 1rem; color: #ffecc7;">
+      Made by <a href="https://x.com/alokekissac" target="_blank" style="color: #00e5ff;">alokekissac</a> for hard boiled egg and alloca family
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
