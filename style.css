@@ -85,9 +85,13 @@ button {
   to { opacity: 0; visibility: hidden; }
 }
 
-/* Responsive title on small screens */
+/* Responsive adjustments on small screens */
 @media (max-width: 480px) {
   h1 {
     font-size: 8vw;
+  }
+
+  #egg {
+    width: 250px;
   }
 }
