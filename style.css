@@ -4,22 +4,29 @@ body {
   background-color: #120b14;
   color: #ffecc7;
 }
+
 h1 {
   font-size: 3rem;
   margin: 2rem 0;
+  white-space: nowrap;
+  text-align: center;
 }
+
 .egg-container {
   position: relative;
   display: inline-block;
 }
+
 #egg {
   width: 400px;
   cursor: pointer;
   transition: transform 0.1s;
 }
+
 #egg:hover {
   animation: shake 0.2s infinite;
 }
+
 @keyframes shake {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(1deg); }
@@ -27,12 +34,14 @@ h1 {
   75% { transform: rotate(1deg); }
   100% { transform: rotate(0deg); }
 }
+
 #confetti {
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
 }
+
 button {
   margin-top: 1rem;
   font-size: 1.2rem;
@@ -76,3 +85,9 @@ button {
   to { opacity: 0; visibility: hidden; }
 }
 
+/* Responsive title on small screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 8vw;
+  }
+}
